@@ -6,7 +6,7 @@
 #    By: ciglesia <ciglesia@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/20 22:37:03 by ciglesia          #+#    #+#              #
-#    Updated: 2020/09/01 02:21:35 by ciglesia         ###   ########.fr        #
+#    Updated: 2021/11/13 15:12:42 by ciglesia         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -68,6 +68,8 @@ re		:		fclean all
 submake	:
 				@(cd $(SUB_MAKE) && $(MAKE))
 
+apt		:
+				sudo apt install python3-tk -y
 
 .PHONY	:		all clean re
 
